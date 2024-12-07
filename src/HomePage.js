@@ -9,7 +9,7 @@ import FooterHome from "./component/HomePage/FooterHome";
 
 const HomePage = () => {
     return(
-        <div>
+        <div >
             <HeaderHome />
             <SearchingHome />
             <ProductHome />
