@@ -1,0 +1,132 @@
+/* Chỉnh sửa nếu bạn muốn căn chỉnh các phần tử theo hàng ngang */
+/* Container chứa các box */
+/* Container chứa các box */
+.box-container {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử ngang hàng */
+    align-items: center;  /* Căn giữa theo chiều dọc */
+    gap: 40px; /* Khoảng cách giữa các phần tử */
+    margin-top: 13%; /* Khoảng cách trên container */
+    padding-left: 90%;
+}
+
+/* Các box */
+.box {
+    width: 170px;
+    height: 50px;
+    background: #F2F4FF;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;  /* Căn giữa dọc */
+    justify-content: space-between;  /* Căn giữa ngang */
+    padding: 0 10px;  /* Khoảng cách bên trong box */
+}
+
+/* Phần text */
+.text {
+    color: #1D275F;
+    font-size: 17px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}
+
+/* Mũi tên */
+.arrow {
+    width: 10px;
+    height: 7px;
+    border: 2px solid #1D275F;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Để "Upcoming Events" là phần tử chính, có thể điều chỉnh như sau */
+.box:nth-child(2) {
+    margin-left: auto; /* Đẩy "Upcoming Events" sang bên trái */
+}
+
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: #242565;
+    font-size: 45px;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+/* Container for Event Cards */
+.event-list {
+    display: flex; /* Sắp xếp các thẻ ngang */
+    flex-wrap: wrap; /* Cho phép xuống dòng khi không đủ không gian */
+    justify-content: center; /* Căn giữa các thẻ */
+    gap: 30px; /* Khoảng cách giữa các thẻ */
+    padding-right : 0%;
+    padding-left : 25%;
+    padding-top: 10%;
+}
+
+/* Event Card */
+.fixed-container {
+    width: 400px;
+    height: 500px;
+    border-radius: 18.95px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image3 {
+    width: 100%;
+    height: 197px;
+    object-fit: cover;
+    border-top-left-radius: 18.95px;
+    border-top-right-radius: 18.95px;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 197px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 18.95px;
+    border-bottom-right-radius: 18.95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.month {
+    font-size: 11.37px;
+    font-weight: 700;
+    color: #3D37F1;
+}
+
+.day {
+    font-size: 28.43px;
+    font-weight: 700;
+    color: black;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
